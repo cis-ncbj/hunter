@@ -31,8 +31,10 @@ function(hunter_pkgconfig_export_target PKG_CONFIG_MODULE PKG_GENERATE_SHARED)
 
   if(${PKG_GENERATE_SHARED})
     set(PKG_CONFIG_PREFIX "${PKG_CONFIG_MODULE}")
+    set(libs_source "LINK_LIBRARIES")
   else()
     set(PKG_CONFIG_PREFIX "${PKG_CONFIG_MODULE}_STATIC")
+    set(libs_source "LDFLAGS")
   endif()
 
   hunter_status_debug(
@@ -58,9 +60,12 @@ function(hunter_pkgconfig_export_target PKG_CONFIG_MODULE PKG_GENERATE_SHARED)
   hunter_status_debug(
       "PKG_CONFIG_MODULE ${PKG_CONFIG_MODULE} LDFLAGS: ${${PKG_CONFIG_PREFIX}_LDFLAGS}"
   )
-  if(NOT "${${PKG_CONFIG_PREFIX}_LDFLAGS}" STREQUAL "")
+  hunter_status_debug(
+      "PKG_CONFIG_MODULE ${PKG_CONFIG_MODULE} LINK_LIBRARIES: ${${PKG_CONFIG_PREFIX}_LINK_LIBRARIES}"
+  )
+  if(NOT "${${PKG_CONFIG_PREFIX}_${libs_source}}" STREQUAL "")
     # turn "-framework;A;-framework;B" into "-framework A;-framework B"
-    string(REPLACE "-framework;" "-framework " ldflags "${${PKG_CONFIG_PREFIX}_LDFLAGS}")
+    string(REPLACE "-framework;" "-framework " ldflags "${${PKG_CONFIG_PREFIX}_${libs_source}}")
     list(APPEND link_libs ${ldflags})
   endif()
 
