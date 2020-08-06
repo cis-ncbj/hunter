@@ -33,9 +33,9 @@ hunter_add_version(
   VERSION
   "4.2.0-p0"
   URL
-  "https://github.com/hunter-packages/zmqpp/archive/v4.2.0-p0.tar.gz"
+  "https://github.com/cis-ncbj/zmqpp/archive/hunter-4.2.0.zip"
   SHA1
-  0cf43d00fa22d26c5bf7a3c5d9f5f5c72cc92982
+  7a0e717c73f735fcb152a678183e355e0e1318e1
   )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
