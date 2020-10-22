@@ -17,7 +17,7 @@ hunter_add_version(
     URL
     "https://github.com/cis-ncbj/cppzmq/archive/hunter-v4.6.0.zip"
     SHA1
-    c4fd234465b7f1025745ddc8cf6bd5dc33aa765c
+    e107ac385bf139e14b1fba05b08fd20e68db51da
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
