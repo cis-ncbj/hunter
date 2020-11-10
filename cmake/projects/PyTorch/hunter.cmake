@@ -11,7 +11,7 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    pytorch
+    PyTorch
     VERSION
     1.6.0
     URL
@@ -21,11 +21,11 @@ hunter_add_version(
 )
 
 hunter_cmake_args(
-    pytorch
+    PyTorch
     CMAKE_ARGS
         BUILD_PYTHON=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(pytorch)
-hunter_download(PACKAGE_NAME pytorch)
+hunter_cacheable(PyTorch)
+hunter_download(PACKAGE_NAME PyTorch)
