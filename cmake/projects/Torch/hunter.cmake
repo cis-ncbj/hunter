@@ -11,21 +11,21 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    PyTorch
+    Torch
     VERSION
     1.6.0
     URL
-    "https://github.com/cis-ncbj/pytorch/releases/download/v1.6.0/pytorch-v1.6.0.zip"
+    "https://github.com/cis-ncbj/pytorch/releases/download/v1.6.0-hunter1/pytorch-v1.6.0.zip"
     SHA1
-    d2258b85f935b5f059d12e10df09ff7771275252
+    117f1837ef68dd13e7caafd657c1500c0333a46d
 )
 
 hunter_cmake_args(
-    PyTorch
+    Torch
     CMAKE_ARGS
         BUILD_PYTHON=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(PyTorch)
-hunter_download(PACKAGE_NAME PyTorch)
+hunter_cacheable(Torch)
+hunter_download(PACKAGE_NAME Torch)
