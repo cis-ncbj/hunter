@@ -17,7 +17,7 @@ hunter_add_version(
     URL
     "https://github.com/cis-ncbj/pytorch/releases/download/v1.6.0-hunter1/pytorch-v1.6.0.zip"
     SHA1
-    104b939ab67366efcdb71def349f6d37
+    d58fd1b201e9246b054efd435fc15df9df3bf804
 )
 
 hunter_cmake_args(
