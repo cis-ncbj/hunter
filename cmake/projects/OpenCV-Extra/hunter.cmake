@@ -13,9 +13,9 @@ hunter_add_version(
     VERSION
     "4.1.1"
     URL
-    "https://github.com/opencv/opencv_contrib/archive/4.1.1.tar.gz"
+    "https://github.com/cis-ncbj/opencv_contrib/archive/hunter-v4.1.1.zip"
     SHA1
-    bb7e39790b04a0a23e0ea1d4882f45c4add3adb7
+    f405c187d5abc165cedaf914fbebaa097e3e8358
 )
 
 hunter_add_version(
