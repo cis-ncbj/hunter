@@ -15,7 +15,7 @@ hunter_add_version(
     URL
     "https://github.com/cis-ncbj/opencv_contrib/archive/hunter-v4.1.1.zip"
     SHA1
-    f405c187d5abc165cedaf914fbebaa097e3e8358
+    11372d12a74f0cda374f28dad5b85bbe39eb5c6f
 )
 
 hunter_add_version(

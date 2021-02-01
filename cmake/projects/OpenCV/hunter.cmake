@@ -494,6 +494,8 @@ hunter_cmake_args(
         # Fix for https://travis-ci.org/ingenue/hunter/builds/452039597
         WITH_OPENEXR=OFF
         WITH_FFMPEG=OFF
+        # Add explicit parameter to enable HDF5 dependency in OpenCV-Extra
+        WITH_HDF5=OFF
 )
 
 # Pick a download scheme
